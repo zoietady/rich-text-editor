@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rich Text Editor</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <script src="js/functions.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="mainFunction()">
+    <div class="container">
+        <ul class="tool-list">
+            <li class="tool">
+                <button type="button" data-command='undo' class="tool--btn">
+                    <i class="fa fa-undo" style="font-size:18px"></i>
+                </button>
+            </li>
+            <li class="tool">
+                <button type="button" data-command='redo' class="tool--btn">
+                    <i class="fa fa-repeat" style="font-size:18px"></i>
+                </button>
+            </li>
+            <li class="tool">
+                <button type="button" data-command='justifyLeft' class="tool--btn">
+                    <i class="fa fa-align-left" style="font-size:18px"></i>
+                </button>
+            </li>
+            <li class="tool">
+                <button type="button" data-command='justifyRight' class="tool--btn">
+                    <i class="fa fa-align-right" style="font-size:18px"></i>
+                </button>
+            </li>
+            <li class="tool">
+                <button type="button" data-command='justifyCenter' class="tool--btn">
+                    <i class="fa fa-align-center" style="font-size:18px"></i>
+                </button>
+            </li>
+            <li class="tool">
+                <button type="button" data-command='justifyFull' class="tool--btn">
+                    <i class="fa fa-align-justify" style="font-size:18px"></i>
+                </button>
+            </li>
+            <li class="tool">
+                <button type="button" data-command="bold" class="tool--btn">
+                    <i class="fa fa-bold" style="font-size:18px"></i>
+                </button>
+            </li>
+            <li class="tool">
+                <button type="button" data-command="italic" class="tool--btn">
+                    <i class="fa fa-italic" style="font-size:18px"></i>
+                </button>
+            </li>
+            <li class="tool">
+                <button type="button" data-command="underline" class="tool--btn">
+                    <i class="fa fa-underline" style="font-size:18px"></i>
+                </button>
+            </li>
+            <li class="tool">
+                <button type="button" data-command="insertOrderedList" class="tool--btn">
+                    <i class="fa fa-list-ol" style="font-size:18px"></i>
+                </button>
+            </li>
+            <li class="tool">
+                <button type="button" data-command="insertUnorderedList" class="tool--btn">
+                    <i class="fa fa-list-ul" style="font-size:18px"></i>
+                </button>
+            </li>
+            <li class="tool">
+                <button type="button" data-command="createlink" class="tool--btn">
+                    <i class="fa fa-link" style="font-size:18px"></i>
+                </button>
+            </li>
+        </ul>
+        <div id="output" contenteditable="true"></div>
+    </div>
+</body>
+
+</html>

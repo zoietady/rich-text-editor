@@ -1,0 +1,33 @@
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tool-list {
+    position: relative;
+	display: flex;
+	list-style: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.tool--btn {
+	display: block;
+	border: none;
+	padding: 1rem;
+}
+
+#output {
+    height: 30vh; 
+    width: 38vw;
+	box-shadow: 0 15px 25px rgba(0,0,0,0.19), 0 10px 10px rgba(0,0,0,0.23);
+    padding: 1rem;
+    margin: 0;
+}
+
+#output:focus{
+    outline: none;
+}
